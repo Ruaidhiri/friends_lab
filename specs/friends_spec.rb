@@ -106,12 +106,12 @@ def test_remove_friend
   #
   # assert_equal(friends_array_length - 1, @person4[:friends].length
 
-  ### Testing person with no friend
+  ### Testing person with friend
   friends_array_length = @person5[:friends].length
 
   remove_friend(@person5, 'Shaggy')
 
-  # test for people with friends
+  # test for people with no friends
   #assert_equal(friends_array_length - 1, @person5[:friends].length)
 
   assert_equal(0, @person5[:friends].length)
